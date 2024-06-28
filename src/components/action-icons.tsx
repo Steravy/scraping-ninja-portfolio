@@ -1,3 +1,4 @@
+import { SocialLinks } from "@/types";
 import { Github, LinkedIn, Twitter } from "../lib/icons"
 
 const ActionIcons = () => {
@@ -5,7 +6,7 @@ const ActionIcons = () => {
     return (
         <div className="flex items-center space-x-3">
             <a
-                href="https://github.com/dubinc/dub"
+                href={SocialLinks.GITHUB}
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full border border-gray-200 p-2 transition-colors bg-background hover:bg-gray-100"
@@ -14,7 +15,7 @@ const ActionIcons = () => {
                 <Github className="h-4 w-4 text-gray-600 transition-colors group-hover:text-black" />
             </a>
             <a
-                href="https://www.linkedin.com/company/dubinc"
+                href={SocialLinks.LINKEDIN}
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full border border-gray-200 p-2 transition-colors bg-background hover:bg-gray-100"
@@ -23,7 +24,7 @@ const ActionIcons = () => {
                 <LinkedIn className="h-4 w-4 text-gray-600 transition-colors group-hover:text-[#0077b5]" />
             </a>
             <a
-                href="https://twitter.com/dubdotco"
+                href={SocialLinks.TWITTER}
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full border border-gray-200 p-2 transition-colors bg-background hover:bg-gray-100"
