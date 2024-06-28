@@ -8,3 +8,12 @@ export enum Themes {
     LIGHT = "light",
     DARK = "dark"
 }
+
+export enum SectionIds {
+    Intro = "home",
+    About = "about",
+    Projects = "projects",
+    Skills = "skills",
+    Experience = "experience",
+    Contact = "contact",
+};
