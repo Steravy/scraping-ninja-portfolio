@@ -1,5 +1,6 @@
 import { SectionIds } from "@/types"
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from "./page-headers";
+import ActionIcons from "./action-icons";
 
 const Intro = () => {
 
@@ -12,11 +13,14 @@ const Intro = () => {
                 </PageHeaderHeading>
 
                 <PageHeaderDescription>
-                    We searched +3500 jobs, so you can choose the one that fits you best!
+                    {/* We searched +3500 jobs, so you can choose the one that fits you best! */}
+                    Hey there! I build web scrapers and bots that efficiently gather information
+                    from the internet and provide real-time updates when changes occur.
+                    My expertise includes creating powerful scrapers capable of indexing millions of pages every day.
                 </PageHeaderDescription>
-                {/* <PageActions className="my-4">
-                
-            </PageActions> */}
+                <PageActions className="my-4">
+                    <ActionIcons />
+                </PageActions>
             </PageHeader>
         </section>
 
