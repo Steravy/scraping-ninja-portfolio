@@ -5,20 +5,18 @@ import ActionIcons from "./action-icons";
 const Intro = () => {
 
     return (
-        <section id={SectionIds.Intro}>
-            <PageHeader className='mt-16'>
+        <section id={SectionIds.Intro} className="h-screen flex flex-col justify-center items-center">
+            <PageHeader>
                 {/* <Announcement label='Why choose dotJobs?' /> */}
                 <PageHeaderHeading >
                     Scraping Ninja.
                 </PageHeaderHeading>
-
-                <PageHeaderDescription>
-                    {/* We searched +3500 jobs, so you can choose the one that fits you best! */}
-                    Hey there! I build web scrapers and bots that efficiently gather information
-                    from the internet and provide real-time updates when changes occur.
-                    My expertise includes creating powerful scrapers capable of indexing millions of pages every day.
+                <PageHeaderDescription className="italic">
+                    "Hello World! I{'`'}m Stefan Vitoria and I build web scrapers and bots that efficiently gather information
+                    from the internet and provide real-time updates when changes occur."
+                    {/* My expertise includes creating powerful scrapers capable of indexing millions of pages every day." */}
                 </PageHeaderDescription>
-                <PageActions className="my-4">
+                <PageActions className="">
                     <ActionIcons />
                 </PageActions>
             </PageHeader>

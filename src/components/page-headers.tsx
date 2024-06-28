@@ -43,7 +43,7 @@ function PageHeaderDescription({
     return (
         <Balance
             className={cn(
-                "max-w-[750px] text-left text-lg font-light text-foreground",
+                "max-w-[750px] text-left text-lg font-light text-foreground my-12",
                 className
             )}
             {...props}
@@ -58,7 +58,7 @@ function PageActions({
     return (
         <div
             className={cn(
-                "flex w-full items-center justify-center space-x-4 py-4 md:pb-10",
+                "flex w-full items-center justify-center space-x-4",
                 className
             )}
             {...props}
