@@ -12,8 +12,8 @@ const Intro = () => {
                     Scraping Ninja.
                 </PageHeaderHeading>
                 <PageHeaderDescription className="italic">
-                    "Hello World! I{'`'}m Stefan Vitoria and I build web scrapers and bots that efficiently gather information
-                    from the internet and provide real-time updates when changes occur."
+                    Hello World! I&#96;m Stefan Vitoria. I build web scrapers and bots that efficiently gather information
+                    from the internet and provide real-time updates when changes occur.
                     {/* My expertise includes creating powerful scrapers capable of indexing millions of pages every day." */}
                 </PageHeaderDescription>
                 <PageActions className="">
