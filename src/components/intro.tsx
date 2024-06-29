@@ -1,11 +1,15 @@
+'use client';
 import { SectionIds } from "@/types"
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from "./page-headers";
 import ActionIcons from "./action-icons";
+import useSectionInView from "@/hooks/use-section-in-view";
 
 const Intro = () => {
 
+    const { ref } = useSectionInView("Intro", 0.5);
+
     return (
-        <section id={SectionIds.Intro} className="h-screen flex flex-col justify-center items-center">
+        <section id={SectionIds.Intro} ref={ref} className="scroll-mt-[100rem] h-[95vh] flex flex-col justify-center items-center">
             <PageHeader>
                 {/* <Announcement label='Why choose dotJobs?' /> */}
                 <PageHeaderHeading >

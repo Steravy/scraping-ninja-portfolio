@@ -1,11 +1,13 @@
 import Intro from "@/components/intro";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Projects from "@/components/projects";
+import SectionSpacer from "@/components/section-spacer";
 
 export default function Home() {
   return (
     <main className="">
-      <Intro/>
+      <Intro />
+      <Projects />
+      <SectionSpacer />
     </main>
   );
 }
