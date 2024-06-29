@@ -1,5 +1,6 @@
 'use client';
 import { SectionIds } from "@/types"
+import { motion } from "framer-motion";
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from "./page-headers";
 import ActionIcons from "./action-icons";
 import useSectionInView from "@/hooks/use-section-in-view";
@@ -16,9 +17,17 @@ const Intro = () => {
                     Scraping Ninja.
                 </PageHeaderHeading>
                 <PageHeaderDescription className="italic">
-                    Hello World! I&#96;m Stefan Vitoria. I build web scrapers and bots that efficiently gather information
-                    from the internet and provide real-time updates when changes occur.
-                    {/* My expertise includes creating powerful scrapers capable of indexing millions of pages every day." */}
+                    <motion.p
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                            type: "tween",
+                            duration: 0.2,
+                        }}
+                    >
+                        Hello World! I&#96;m Stefan Vitoria. I build web scrapers and bots that efficiently gather information
+                        from the internet and provide real-time updates when changes occur.
+                    </motion.p>
                 </PageHeaderDescription>
                 <PageActions className="">
                     <ActionIcons />

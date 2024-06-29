@@ -1,10 +1,19 @@
 import { SocialLinks } from "@/types";
-import { Github, LinkedIn, Twitter } from "../lib/icons"
+import { Github, LinkedIn, Twitter } from "../lib/icons";
+import { motion } from "framer-motion";
 
 const ActionIcons = () => {
 
     return (
-        <div className="flex items-center space-x-3">
+        <motion.div
+            className="flex items-center space-x-3"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                type: "tween",
+                duration: 0.4,
+            }}
+        >
             <a
                 href={SocialLinks.GITHUB}
                 target="_blank"
@@ -32,7 +41,7 @@ const ActionIcons = () => {
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-4 w-4 text-gray-600 transition-colors group-hover:text-black" />
             </a>
-        </div>
+        </motion.div>
     )
 }
 

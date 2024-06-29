@@ -15,7 +15,7 @@ const Projects = (props: Props) => {
 
         <section ref={ref} id='projects' className="scroll-mt-28 px-3 flex flex-col items-center justify-center">
 
-            <SectionTitle>Things I&#39;ve worked on</SectionTitle>
+            <SectionTitle shouldAnimate>Things I&#39;ve worked on</SectionTitle>
 
             {
                 projectsData.map((project, index) => (
