@@ -68,22 +68,29 @@ export const projectsData = [
     description:
       "Web scraper that collected 265k+ leads from Angi.com, including company name, phone, email, and address.",
     tags: ["NodeJs", "PostgreSQL", "Typescript", "NextJs"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "AI Tools Webdirectory",
-    description:
-      "Bot specialized in scraping AI tools from the web. Retrieves tool data and categorizes by niche and use case.",
-    tags: ["NodeJs", "PostgreSQL", "Typescript", "NextJs"],
-    imageUrl: rmtdevImg,
+    imageUrl: wordanalyticsImg,
   },
   {
     title: "Jod Data API",
     description:
       "Custom bot retrieves job data from company career pages and updates job boards every 12 or 24 hours.",
     tags: ["NodeJs", "PostgreSQL", "Typescript", "Python", "FastAPI"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: rmtdevImg,
   },
+  {
+    title: "AI Tools Webdirectory",
+    description:
+      "Bot specialized in scraping AI tools from the web. Retrieves tool data and categorizes by niche and use case.",
+    tags: ["NodeJs", "PostgreSQL", "Typescript", "NextJs"],
+    imageUrl: corpcommentImg,
+  },
+  // {
+  //   title: "Reading Order",
+  //   description:
+  //     "Custom bot scraped authors' books, series, publication order, and chronological details, delivering organized data for enhanced discovery.",
+  //   tags: ["Python", "FastAPI", "PostgreSQL",],
+  //   imageUrl: corpcommentImg,
+  // },
 ] as const;
 
 export const skillsData = [
